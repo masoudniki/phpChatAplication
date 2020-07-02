@@ -78,6 +78,7 @@ $session = mt_rand(1, 999);
                     var objDiv = document.querySelector('#chat_output');
                     objDiv.scrollTop = objDiv.scrollHeight;
                 }
+                $(typedMsg).focus()
             }
             document.body.addEventListener('keypress', function(event) {
                 if (event.keyCode === 13)
