@@ -59,11 +59,11 @@ body {
 }
 
 .darker {
-	background-color: var(--color-primary-dark);
+	background-color: var(--color-primary-dark) !important;
 }
 
 .darker::after {
-	background-color: var(--color-primary-dark);
+	border-right-color: var(--color-primary-dark) !important;
 }
 
 .container img {
@@ -97,7 +97,7 @@ body {
 
 .speech-bubble {
 	position: relative;
-	background: var(--color-primary-light);
+	background-color: var(--color-primary-light);
 	color: white;
 	padding: 10px;
 	margin: 5px 0;
@@ -161,7 +161,7 @@ body {
 
 @media screen and (max-width: 576px) {
 	#chat_input {
-		height: 40px;
+		height: 45px;
 	}
 
 	.send-btn i {
@@ -169,7 +169,7 @@ body {
 	}
 
 	#chat_output {
-		height: calc(100% - 40px);
+		height: calc(100% - 45px);
 	}
 
 	.center {
