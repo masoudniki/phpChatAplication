@@ -58,7 +58,8 @@ $session = mt_rand(1, 999);
                           <span id="outputMsg">${Msg.msg}</span>
                         </div>`;
                         break;
-                });
+                }
+            });
 
             function sendMsg() {
                 let typedMsg = document.getElementById("chat_input");
