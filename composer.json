@@ -4,6 +4,7 @@
             "App\\": "app"}
 	},
     "require": {
-        "cboden/ratchet": "^0.4"
+        "cboden/ratchet": "^0.4",
+		"firebase/php-jwt": "^5.2"
     }
 }
