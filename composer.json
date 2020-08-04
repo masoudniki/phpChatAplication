@@ -5,6 +5,9 @@
 	},
     "require": {
         "cboden/ratchet": "^0.4",
-		"firebase/php-jwt": "^5.2"
+		"firebase/php-jwt": "^5.2",
+      "ext-json": "*",
+		"illuminate/database": "^7.20",
+		"illuminate/events": "^7.20"
     }
 }

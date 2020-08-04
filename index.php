@@ -35,7 +35,8 @@ $session = mt_rand(1, 999);
                 webSocket.send(
                     JSON.stringify({
                         "type": "socket",
-                        "user_id": <?php echo $session ?>
+                        "user_id": <?php echo $session ?>,
+                        "jwt_token":window.localStorage.getItem('jwt_token')
                     }))
 
             });
@@ -60,6 +61,7 @@ $session = mt_rand(1, 999);
                         break;
                 }
             });
+       
 
             function sendMsg() {
                 let typedMsg = document.getElementById("chat_input");
@@ -69,7 +71,8 @@ $session = mt_rand(1, 999);
                     webSocket.send(JSON.stringify({
                         "type": "chat",
                         "user_id": <?php echo $session ?>,
-                        "user_msg": typedMsg.value
+                        "user_msg": typedMsg.value,
+                        "jwt_token":window.localStorage.getItem('jwt_token')
 
                     }));
 
